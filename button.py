@@ -10,7 +10,13 @@ while True:
     if button.value != last_value:
         if status_tor == 0:
             os.system('service tor stop')
+            os.system('./flush_iptables.sh')
+            os.system('./iptables_ap.sh')
+            print('stop')
         else:
+            os.system('./flush_iptables.sh')
+            os.system('./iptables_tor.sh')
             os.system('service tor start')
+            print('on')
         last_value = button.value
 
