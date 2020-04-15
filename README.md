@@ -21,4 +21,4 @@ $ ./install_services.sh
 
 ## TODOs
 
-- [ ] Services to start pyhton scripts.
+- [x] Services to start pyhton scripts.
