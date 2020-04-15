@@ -2,7 +2,7 @@
 
 ## Howto
 ~~~
-$ git clone <repo>
+$ git clone https://github.com/carellan/tor_leds_button.git
 $ cd tor_leds_button
 $ virtualenv venv -p python3
 $ source venv/bin/activate
