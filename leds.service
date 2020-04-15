@@ -1,0 +1,11 @@
+[Unit]
+Description=Leds Tor
+After=tor.service
+
+[Service]
+Type=idle
+
+ExecStart=/root/tor_leds_button/venv/bin/python /root/tor_leds_button/leds.py
+
+[Install]
+WantedBy=multi-user.target
