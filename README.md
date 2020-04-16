@@ -4,6 +4,7 @@
 ~~~
 $ git clone https://github.com/carellan/tor_leds_button.git
 $ cd tor_leds_button
+apt-get install virtualev
 $ virtualenv venv -p python3
 $ source venv/bin/activate
 (venv)$ pip install -r requirements.txt
