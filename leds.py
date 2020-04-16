@@ -2,9 +2,9 @@ from gpiozero import LED
 from time import sleep
 import os
 
-cian_led = LED(21) #Cian 
-yellow_led = LED(20) #Yellow
-magenta_led = LED(16) #Magenta
+cian_led = LED(13) #Cian 
+yellow_led = LED(19) #Yellow
+magenta_led = LED(26) #Magenta
 
 def off_all_leds(cian, yellow, magenta):
     cian.off()
@@ -17,6 +17,7 @@ while True:
         off_all_leds(cian_led, yellow_led, magenta_led)
         magenta_led.on()
         cian_led.on()
+        print('HELLO')
     else:
         off_all_leds(cian_led, yellow_led, magenta_led)
         magenta_led.on()
