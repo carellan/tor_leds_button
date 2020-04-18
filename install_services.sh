@@ -1,5 +1,4 @@
-cp ./leds.service /etc/systemd/system
-cp ./button.service /etc/systemd/system
+cp ./*.service /etc/systemd/system 
 
 systemctl daemon-reload
 
@@ -8,3 +7,6 @@ systemctl enable leds
 
 service button start
 systemctl enable button
+
+service button_reboot start
+systemctl enable button_reboot

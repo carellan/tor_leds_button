@@ -1,0 +1,10 @@
+[Unit]
+Description=Button Reboot RPi
+
+[Service]
+Type=idle
+
+ExecStart=/root/tor_leds_button/venv/bin/python /root/tor_leds_button/button_reboot.py
+
+[Install]
+WantedBy=multi-user.target
