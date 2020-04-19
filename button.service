@@ -4,7 +4,7 @@ After=tor.service
 
 [Service]
 Type=idle
-
+User=root
 ExecStart=/root/tor_leds_button/venv/bin/python /root/tor_leds_button/button.py
 
 [Install]

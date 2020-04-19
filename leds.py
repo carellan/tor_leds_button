@@ -17,7 +17,6 @@ while True:
         off_all_leds(cian_led, yellow_led, magenta_led)
         magenta_led.on()
         cian_led.on()
-        print('HELLO')
     else:
         off_all_leds(cian_led, yellow_led, magenta_led)
         magenta_led.on()
